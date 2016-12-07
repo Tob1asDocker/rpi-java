@@ -6,7 +6,7 @@
 ### How to use this image
 * ``` docker pull tobi312/rpi-java ```
 * Your ``` Dockerfile ``` :
-	``` 
+	```Dockerfile
 	FROM tobi312/rpi-java:latest
 	COPY . /app
 	WORKDIR /app
