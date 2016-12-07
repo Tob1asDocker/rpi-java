@@ -6,12 +6,12 @@
 ### How to use this image
 * ``` docker pull tobi312/rpi-java ```
 * Your ``` Dockerfile ``` :
-	```Dockerfile
-	FROM tobi312/rpi-java:latest
-	COPY . /app
-	WORKDIR /app
-	CMD ["java","-jar","App.jar"]
-	```
+```Dockerfile
+FROM tobi312/rpi-java:latest
+COPY . /app
+WORKDIR /app
+CMD ["java","-jar","App.jar"]
+```
 * ``` docker build -t my-java-app . ```
 * ``` docker run -it --rm --name my-running-app my-java-app ```
 
