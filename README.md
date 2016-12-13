@@ -1,9 +1,22 @@
-# Java 8 (OpenJDK) on Raspberry Pi
+# Java 8 (OpenJDK) on Raspberry Pi / armhf
 
-### Image Info
-* http://openjdk.java.net/
+image with:
+- JRE and
+- JDK
+
+### Supported tags
+-	`latest` (*It always uses the latest OpenJDK version contained in raspbian:jessie.*)
+
+### What is OpenJDK?
+OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE). OpenJDK is the official reference implementation of Java SE since version 7.
+> [wikipedia.org/wiki/OpenJDK](http://en.wikipedia.org/wiki/OpenJDK) and [openjdk.java.net](http://openjdk.java.net/)
+
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/openjdk/logo.png)
 
 ### How to use this image
+
+* compare with: https://hub.docker.com/_/openjdk/
+
 * ``` docker pull tobi312/rpi-java ```
 * Your ``` Dockerfile ``` :
 ```Dockerfile
