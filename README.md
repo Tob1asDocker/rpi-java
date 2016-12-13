@@ -17,7 +17,7 @@ OpenJDK (Open Java Development Kit) is a free and open source implementation of 
 
 * compare with: https://hub.docker.com/_/openjdk/
 
-* ``` docker pull tobi312/rpi-java ```
+* ``` docker pull tobi312/rpi-java:latest ```
 * Your ``` Dockerfile ``` :
 ```Dockerfile
 FROM tobi312/rpi-java:latest
@@ -30,7 +30,7 @@ CMD ["java","-jar","App.jar"]
 
 or build it yourself
 * ``` git clone https://github.com/TobiasH87Docker/rpi-java.git && cd rpi-java ```
-* ``` docker build -t tobi312/rpi-java . ``` 
+* ``` docker build -t tobi312/rpi-java:latest . ``` 
 * see above
 
 ### This Image on
