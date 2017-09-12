@@ -1,5 +1,5 @@
-#FROM resin/rpi-raspbian:latest
-FROM jsurf/rpi-raspbian:latest
+#FROM resin/rpi-raspbian:stretch
+FROM jsurf/rpi-raspbian:stretch
 
 MAINTAINER Tobias Hargesheimer <docker@ison.ws>
 
