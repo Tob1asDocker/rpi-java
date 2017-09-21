@@ -7,12 +7,14 @@ ENV TZ Europe/Berlin
 
 RUN [ "cross-build-start" ]
 
-RUN apt-get update && apt-get install -y \
-	git \
-	zip unzip \
-	bzip2 \
-	wget \
-	nano \
+RUN set -ex && \
+	apt-get update && apt-get install -y \
+	#git \
+	#zip unzip \
+	#bzip2 \
+	#wget \
+	#curl \
+	#nano \
 	openjdk-8-jre \
 	openjdk-8-jdk \
 	ca-certificates-java \
