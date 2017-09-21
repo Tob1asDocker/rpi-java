@@ -1,7 +1,7 @@
 # Java 8 (OpenJDK) on Raspberry Pi / armhf
 
 ### Supported tags
--	`latest` (*It always uses the latest OpenJDK version (JRE and JDK) contained in raspbian:jessie.*)
+-	`latest` (*It always uses the latest OpenJDK version (JRE and JDK) contained in raspbian:stretch.*)
 
 ### What is OpenJDK?
 OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE). OpenJDK is the official reference implementation of Java SE since version 7.
