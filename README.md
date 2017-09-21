@@ -1,7 +1,8 @@
-# Java 8 (OpenJDK) on Raspberry Pi / armhf
+# Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / armhf
 
 ### Supported tags
--	`latest` (*It always uses the latest OpenJDK version (JRE and JDK) contained in raspbian:stretch.*)
+-	[`latest` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/debian/Dockerfile) (*It always uses the latest version contained in raspbian:stretch.*)
+-	[`alpine` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/alpine/Dockerfile) (*It always uses the latest [version](https://pkgs.alpinelinux.org/package/v3.6/community/armhf/openjdk8) contained in alpinelinux.*)
 
 ### What is OpenJDK?
 OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE). OpenJDK is the official reference implementation of Java SE since version 7.
