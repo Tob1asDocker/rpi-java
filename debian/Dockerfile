@@ -10,11 +10,14 @@ RUN [ "cross-build-start" ]
 RUN set -ex && \
 	apt-get update && apt-get install -y \
 	#git \
-	#zip unzip \
+	#zip \
+	#unzip \
 	#bzip2 \
+	#xz-utils \
 	#wget \
 	#curl \
 	#nano \
+	openjdk-8-jre-headless \
 	openjdk-8-jre \
 	openjdk-8-jdk \
 	ca-certificates-java \

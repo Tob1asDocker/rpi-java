@@ -10,7 +10,8 @@ RUN [ "cross-build-start" ]
 RUN set -x && \
 	apk --no-cache add \
 	#git \
-	#zip unzip \
+	#zip \
+	#unzip \
 	#bzip2 \
 	#wget \
 	#curl \
