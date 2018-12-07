@@ -1,6 +1,8 @@
 # Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / armhf
 
-## INFO
+## INFO 
+
+[DEPRECATED]  
 
 This image is no longer supported!  
 
@@ -9,8 +11,8 @@ Use:
 * [resin/raspberry-pi-alpine-openjdk](https://hub.docker.com/r/resin/raspberry-pi-alpine-openjdk/)
 
 ### Supported tags
--	[`latest` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/debian/Dockerfile) (*It always uses the latest version contained in raspbian:stretch.*)
--	[`alpine` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/alpine/Dockerfile) (*It always uses the latest [version](https://pkgs.alpinelinux.org/package/v3.6/community/armhf/openjdk8) contained in alpinelinux.*)
+-	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-java/blob/master/debian/Dockerfile) (*It always uses the latest version contained in raspbian:stretch.*)
+-	[`alpine` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-java/blob/master/alpine/Dockerfile) (*It always uses the latest [version](https://pkgs.alpinelinux.org/package/v3.6/community/armhf/openjdk8) contained in alpinelinux.*)
 
 ### What is OpenJDK?
 OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE). OpenJDK is the official reference implementation of Java SE since version 7.
@@ -34,10 +36,10 @@ CMD ["java","-jar","App.jar"]
 * ``` $ docker run -it --rm --name my-running-app my-java-app ```
 
 or build it yourself
-* ``` $ git clone https://github.com/TobiasH87Docker/rpi-java.git && cd rpi-java/debian ```
+* ``` $ git clone https://github.com/Tob1asDocker/rpi-java.git && cd rpi-java/debian ```
 * ``` $ docker build -t tobi312/rpi-java:latest . ``` 
 * see above
 
 ### This Image on
 * [DockerHub](https://hub.docker.com/r/tobi312/rpi-java/)
-* [GitHub](https://github.com/TobiasH87Docker/rpi-java)
+* [GitHub](https://github.com/Tob1asDocker/rpi-java)
