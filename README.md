@@ -1,8 +1,6 @@
 # Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / armhf
 
-## INFO 
-
-[DEPRECATED]  
+## [DEPRECATED] 
 
 This image is no longer supported!  
 
