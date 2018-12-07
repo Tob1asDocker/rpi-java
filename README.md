@@ -1,5 +1,13 @@
 # Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / armhf
 
+## INFO
+
+This image is no longer supported!  
+
+Use:  
+* [resin/raspberry-pi-openjdk](https://hub.docker.com/r/resin/raspberry-pi-openjdk/)
+* [resin/raspberry-pi-alpine-openjdk](https://hub.docker.com/r/resin/raspberry-pi-alpine-openjdk/)
+
 ### Supported tags
 -	[`latest` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/debian/Dockerfile) (*It always uses the latest version contained in raspbian:stretch.*)
 -	[`alpine` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-java/blob/master/alpine/Dockerfile) (*It always uses the latest [version](https://pkgs.alpinelinux.org/package/v3.6/community/armhf/openjdk8) contained in alpinelinux.*)
