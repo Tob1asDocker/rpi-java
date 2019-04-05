@@ -1,6 +1,16 @@
-FROM balenalib/raspberry-pi-alpine:3.6
+FROM balenalib/raspberry-pi-alpine:3.9
 
-RUN [ "cross-build-start" ]
+LABEL org.opencontainers.image.authors="Tobias Hargesheimer <docker@ison.ws>" \
+	org.opencontainers.image.title="JAVA" \
+	org.opencontainers.image.description="AlpineLinux with JAVA on arm arch" \
+	org.opencontainers.image.licenses="Apache-2.0" \
+	org.opencontainers.image.url="https://hub.docker.com/r/tobi312/rpi-java" \
+	org.opencontainers.image.source="https://github.com/Tob1asDocker/rpi-java"
+
+ARG CROSS_BUILD_START=":"
+ARG CROSS_BUILD_END=":"
+
+RUN [ ${CROSS_BUILD_START} ]
 
 ENV TZ Europe/Berlin
 
@@ -30,7 +40,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 
 #ENV JAVA_VERSION 8
-ENV JAVA_ALPINE_VERSION 8.151.12-r0
+ENV JAVA_ALPINE_VERSION 8
 
 RUN set -x \
 	&& apk add --no-cache \
@@ -46,7 +56,7 @@ RUN set -x \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-RUN [ "cross-build-end" ]
-
 ENTRYPOINT ["/entrypoint.sh"]
 #CMD ["java","-jar","/App.jar"]
+
+RUN [ ${CROSS_BUILD_END} ]

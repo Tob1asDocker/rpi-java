@@ -1,6 +1,16 @@
 FROM balenalib/rpi-raspbian:stretch
 
-RUN [ "cross-build-start" ]
+LABEL org.opencontainers.image.authors="Tobias Hargesheimer <docker@ison.ws>" \
+	org.opencontainers.image.title="JAVA" \
+	org.opencontainers.image.description="Debian 9 Stretch with JAVA on arm arch" \
+	org.opencontainers.image.licenses="Apache-2.0" \
+	org.opencontainers.image.url="https://hub.docker.com/r/tobi312/rpi-java" \
+	org.opencontainers.image.source="https://github.com/Tob1asDocker/rpi-java"
+
+ARG CROSS_BUILD_START=":"
+ARG CROSS_BUILD_END=":"
+
+RUN [ ${CROSS_BUILD_START} ]
 
 ENV TZ Europe/Berlin
 
@@ -78,7 +88,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-RUN [ "cross-build-end" ]
-
 ENTRYPOINT ["/entrypoint.sh"]
 #CMD ["java","-jar","/App.jar"]
+
+RUN [ ${CROSS_BUILD_END} ]
