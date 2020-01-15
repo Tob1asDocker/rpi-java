@@ -9,6 +9,7 @@ Please use the following images:
 * offical [OpenJDK](https://hub.docker.com/_/openjdk)-Images
 * offical [AdoptOpenJDK](https://hub.docker.com/_/adoptopenjdk)-Images or Images build by [AdoptOpenJDK](https://hub.docker.com/u/adoptopenjdk)
 * [balena](https://www.balena.io/docs/reference/base-images/base-images-ref/)-OpenJDK-Images and more.
+* [webhippie/java](https://hub.docker.com/r/webhippie/java)-Images
 
 ---
 
