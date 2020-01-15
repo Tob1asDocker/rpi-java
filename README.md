@@ -1,8 +1,8 @@
 # Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / ARM
 
-### NOT MAINTAINED AND DEPECATED
+### NOT MAINTAINED AND DEPRECATED
 
-This image is not maintained and is depcreated!  
+This image is not maintained and is deprecated!  
   
 Please use the following images:
 
