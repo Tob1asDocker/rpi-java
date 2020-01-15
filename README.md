@@ -1,12 +1,16 @@
 # Java 8 (OpenJDK; JRE and JDK) on Raspberry Pi / ARM
 
-## [DEPRECATED] 
+### NOT MAINTAINED AND DEPECATED
 
-This image is no longer supported!  
+This image is not maintained and is depcreated!  
+  
+Please use the following images:
 
-Use:  
-* [balenalib/raspberry-pi-openjdk](https://hub.docker.com/r/balenalib/raspberry-pi-openjdk/)
-* [balenalib/raspberry-pi-alpine-openjdk](https://hub.docker.com/r/balenalib/raspberry-pi-alpine-openjdk/)
+* offical [OpenJDK](https://hub.docker.com/_/openjdk)-Images
+* offical [AdoptOpenJDK](https://hub.docker.com/_/adoptopenjdk)-Images or Images build by [AdoptOpenJDK](https://hub.docker.com/u/adoptopenjdk)
+* [balena](https://www.balena.io/docs/reference/base-images/base-images-ref/)-OpenJDK-Images and more.
+
+---
 
 ### Supported tags
 -	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-java/blob/master/debian/Dockerfile) (*It always uses the latest Java 8 version contained in raspbian:stretch.*)

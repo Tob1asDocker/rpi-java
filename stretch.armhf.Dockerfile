@@ -1,6 +1,6 @@
 FROM balenalib/rpi-raspbian:stretch
 
-LABEL org.opencontainers.image.authors="Tobias Hargesheimer <docker@ison.ws>" \
+LABEL org.opencontainers.image.authors="*" \
 	org.opencontainers.image.title="JAVA" \
 	org.opencontainers.image.description="Debian 9 Stretch with JAVA on arm arch" \
 	org.opencontainers.image.licenses="Apache-2.0" \

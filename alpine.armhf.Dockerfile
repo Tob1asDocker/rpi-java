@@ -1,6 +1,6 @@
 FROM balenalib/raspberry-pi-alpine:3.9
 
-LABEL org.opencontainers.image.authors="Tobias Hargesheimer <docker@ison.ws>" \
+LABEL org.opencontainers.image.authors="*" \
 	org.opencontainers.image.title="JAVA" \
 	org.opencontainers.image.description="AlpineLinux with JAVA on arm arch" \
 	org.opencontainers.image.licenses="Apache-2.0" \
